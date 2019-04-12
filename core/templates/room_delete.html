@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'base.html' %}
+   {% block content %}
+       <h4>Usuń salę {{ room.name }}</h4>
+       <form action="" method="post">
+       {% csrf_token %}
+       <input type="submit" value="Usuń salę">
+       </form>
+   {% endblock %}
+</body>
+</html>

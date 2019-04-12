@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   {% extends 'base.html' %}
+   {% block content %}
+       <h4>Dodaj nową salę</h4>
+       <form action="" method="post">
+       {% csrf_token %}
+           <label>Nazwa: <input type="text" name="name"></label>
+           <label>Pojemność: <input type="text" name="capacity"></label>
+           <label>Ma projektor? <input type=checkbox name="has_projector"></label>
+       <input type="submit" value="Dodaj salę">
+       </form>
+   {% endblock %}
+
+</body>
+</html>
